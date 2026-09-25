@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#171a2b" />
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app" aria-label="واجهة تسجيل الدخول">
+    <section class="mascot-panel" aria-label="شخصية قطة تفاعلية">
+      <div class="scene">
+        <div class="orbit"></div>
+        <div class="cat" id="cat" aria-hidden="true">
+          <div class="speech" id="speech">أهلًا! اكتبي بريدك ✦</div>
+          <div class="tail"></div>
+          <div class="body"></div>
+          <div class="head">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="brow left"></div>
+            <div class="brow right"></div>
+            <div class="eyes">
+              <div class="eye"><span class="pupil"></span></div>
+              <div class="eye"><span class="pupil"></span></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="whiskers left"></div>
+            <div class="whiskers right"></div>
+          </div>
+          <div class="paw left"></div>
+          <div class="paw right"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-panel">
+      <p class="eyebrow">WELCOME BACK</p>
+      <h1>مرحبًا بعودتك.</h1>
+      <p class="intro">أدخلي بياناتك للمتابعة إلى حسابك.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="email">البريد الإلكتروني</label>
+          <input id="email" type="email" autocomplete="email" placeholder="name@example.com" />
+        </div>
+
+        <div class="field">
+          <label for="password">كلمة المرور</label>
+          <input id="password" type="password" autocomplete="current-password" placeholder="6 أحرف أو أكثر" />
+          <button class="toggle" id="togglePassword" type="button" aria-label="إظهار كلمة المرور">إظهار</button>
+        </div>
+
+        <div class="row">
+          <label class="remember"><input type="checkbox" /> تذكّرني</label>
+          <a href="#">نسيت كلمة المرور؟</a>
+        </div>
+
+        <button class="submit" type="submit">تسجيل الدخول</button>
+        <p class="message" id="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
