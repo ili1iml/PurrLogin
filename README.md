@@ -67,4 +67,4 @@ This project is licensed under the MIT License — feel free to use and modify i
 
 ## 🙌 Credits
 
-Designed and built by **Mori (Moudi Alotaibi)**.
+Designed and built by **(Moudi Alotaibi)**.
